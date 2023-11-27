@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/checkout_cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="cart-pay">
+      <div id="userCart">
+        <table border="1px">
+          <thead>
+            <tr>
+              <th class="hiddenTh">STT</th>
+              <th class="hiddenTh">SẢN PHẨM</th>
+              <th class="hiddenTh">HÌNH ẢNH</th>
+              <th class="hiddenTh">GIÁ</th>
+              <th class="hiddenTh">SỐ LƯỢNG</th>
+              <th class="hiddenTh">TẠM TÍNH</th>
+              <th class="boderHidden"></th>
+            </tr>
+          </thead>
+          <tbody id="buyTableTotal"></tbody>
+          <tfoot>
+            <tr>
+              <th colspan="4" class="th-back">
+                <button class="btnFoot-back" onclick="homeBack()">
+                  << TIẾP TỤC XEM SẢN PHẨM <<
+                </button>
+              </th>
+              <th colspan="2" class="th-pay">
+                <button class="btnFoot-pay" onclick="payMoney()">
+                  THANH TOÁN
+                </button>
+              </th>
+              <th class="th-spaceD"></th>
+            </tr>
+          </tfoot>
+          <tfoot>
+            <tr>
+              <th colspan="5" class="hiddenTh2">Tổng thanh toán</th>
+              <th id="total" class="hiddenTh2"></th>
+              <th class="boderHidden"></th>
+            </tr>
+          </tfoot>
+        </table>
+        <div id="showNotice">Bạn đã mua hàng thành công</div>
+      </div>
+
+      <div id="userPay">
+        <div class="payCss">
+          <div class="payCss__home" onclick="closeClick()">
+            <span class="material-symbols-outlined closeUserPay">close</span>
+          </div>
+          <label for="" id="nameLabel">Tên</label>
+          <input type="text" id="nameInput" placeholder="Nguyễn Văn A" />
+          <div class="hiddenDiv">
+            <span class="hiddenSpan">1</span>
+            <span id="nameNotice" class="notice"></span>
+          </div>
+
+          <label for="">Email</label>
+          <input
+            type="text"
+            id="emailInput"
+            placeholder="nguyenvana@gmail.com"
+          />
+          <div class="hiddenDiv">
+            <span class="hiddenSpan">1</span>
+            <span id="emailNotice" class="notice"></span>
+          </div>
+
+          <label for="">SĐT</label>
+          <input type="number" id="phoneInput" placeholder="1234567890" />
+          <div class="hiddenDiv">
+            <span class="hiddenSpan">1</span>
+            <span id="phoneNotice" class="notice"></span>
+          </div>
+
+          <label for="">Địa chỉ giao hàng:</label>
+          <textarea name="" id="address" cols="30" rows="10"></textarea>
+          <div class="hiddenDiv">
+            <span class="hiddenSpan">1</span>
+            <span id="addressNotice" class="notice"></span>
+          </div>
+
+          <label for="">Ghi chú:</label>
+          <textarea name="" id="note" cols="30" rows="10"></textarea>
+
+          <div class="divBtn">
+            <button class="payDone" onclick="payProduct()">
+              TIẾN HÀNH THANH TOÁN
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/checkout_cart.js"></script>
+  </body>
+</html>

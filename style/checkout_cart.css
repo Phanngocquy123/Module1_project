@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#cart-pay {
+  display: flex;
+}
+#userCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 7;
+  margin: 50px;
+  animation: flex9 3s;
+}
+
+#userPay {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 50px 20px;
+  display: none;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* userCart */
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+.btnFoot {
+  margin-top: 20px;
+  display: flex;
+  gap: 150px;
+  justify-content: space-between;
+}
+.hiddenTh {
+  border-top: hidden;
+  border-right: hidden;
+  border-left: hidden;
+}
+.hiddenTd {
+  border-right: hidden;
+  border-left: hidden;
+}
+
+.boderHidden {
+  border-top: hidden;
+  border-right: hidden;
+  border-bottom: hidden;
+}
+.hiddenTh2 {
+  border-right: hidden;
+  border-left: hidden;
+  color: blue;
+  font-size: 17px;
+}
+th {
+  padding: 3px;
+}
+td {
+  text-align: center;
+  padding: 3px;
+}
+.imgOut {
+  height: 80px;
+}
+.quantityOut {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  border: hidden;
+}
+.quantityNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 174, 0);
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  border: solid 1px;
+}
+.quantityBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  border: solid 1px;
+}
+.deleteProduct {
+  font-size: 25px;
+}
+.th-back {
+  text-align: left;
+  border-left: hidden;
+  border-bottom: hidden;
+  border-right: hidden;
+}
+.th-pay {
+  text-align: right;
+  border-bottom: hidden;
+  border-right: hidden;
+}
+.th-spaceD {
+  border-bottom: hidden;
+  border-right: hidden;
+}
+.btnFoot-back {
+  background-color: white;
+  border: solid rgb(165, 247, 64);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  color: red;
+}
+.btnFoot-pay {
+  background-color: rgb(247, 64, 64);
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.btnFoot-back:hover {
+  background-color: rgb(247, 166, 166);
+  color: white;
+  cursor: pointer;
+}
+.btnFoot-pay:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.quantityBtn:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+.deleteProduct:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* userPay */
+
+.payCss {
+  display: flex;
+  flex-direction: column;
+  border: outset 5px rgb(229, 196, 196);
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.closeUserPay {
+  position: absolute;
+  right: 15px;
+  top: 15;
+}
+label {
+  font-size: 20px;
+}
+#nameLabel {
+  margin-top: 30px;
+}
+input {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  text-indent: 10px;
+  font-size: 17px;
+  border-color: #dbdb;
+  margin-bottom: 3px;
+}
+input:focus {
+  background-color: antiquewhite;
+}
+.divBtn {
+  text-align: center;
+}
+
+.hiddenDiv {
+  text-align: right;
+}
+.hiddenSpan {
+  visibility: hidden;
+}
+.notice {
+  color: red;
+  margin-left: 5px;
+}
+#address {
+  height: 100px;
+  text-indent: 10px;
+}
+#note {
+  height: 50px;
+  text-indent: 10px;
+}
+textarea:focus {
+  background-color: antiquewhite;
+}
+.payDone {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 4px;
+  border-radius: 5px;
+  border: groove;
+}
+
+.closeUserPay:hover {
+  color: red;
+  cursor: pointer;
+}
+.payDone:hover {
+  border: solid red;
+  cursor: pointer;
+}
+/* hiện thông báo mua hành thành công */
+#showNotice {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #8fff3a;
+  color: rgb(0, 4, 226);
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  font-size: 30px;
+}
+#showNotice.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 5s;
+  animation: fadein 0.5s, fadeout 0.5s 5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 50%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 50%;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 50%;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

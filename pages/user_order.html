@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/user_order.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="header__userOrders">
+      <span
+        onclick="home()"
+        class="material-symbols-outlined header__userOrders-home"
+      >
+        home
+      </span>
+      <p class="header__userOrders-p">Đơn hàng của bạn</p>
+    </div>
+
+    <div class="order">
+      <div id="orderList">
+        <p class="orderList-p">Đơn hàng đã đặt</p>
+        <table border="1px" style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Stt</th>
+              <th>Tên</th>
+              <th>Địa chỉ</th>
+              <th>Số điện thoại</th>
+              <th>Thời gian</th>
+              <th>Đơn hàng</th>
+              <th>Ghi chú KH</th>
+              <th>Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody id="showOrders"></tbody>
+        </table>
+      </div>
+      <div id="orderDetail">
+        <div class="orderDetail-close">
+          <p class="orderDetail-closeP">Chi tiết đơn hàng</p>
+          <span
+            class="material-symbols-outlined orderDetail-closeSpan"
+            onclick="closeClick()"
+            >close</span
+          >
+        </div>
+        <table border="1px" style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th class="hiddenTh">Stt</th>
+              <th class="hiddenTh">Sản phẩm</th>
+              <th class="hiddenTh">Hình ảnh</th>
+              <th class="hiddenTh">Giá</th>
+              <th class="hiddenTh">Số lượng</th>
+              <th class="hiddenTh">Tạm tính</th>
+            </tr>
+          </thead>
+          <tbody id="detailTotal"></tbody>
+          <tfoot>
+            <tr>
+              <th colspan="5">Tổng tiền</th>
+              <th id="total"></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <script src="../js/user_order.js"></script>
+  </body>
+</html>

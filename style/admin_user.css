@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.adminControl {
+  background-color: rgb(251, 245, 236);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.adminControl-btn {
+  border: groove;
+  border-radius: 5px;
+  padding: 2px;
+}
+.adminControl-btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 0);
+}
+
+/* table */
+.userTableControl-p {
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(203, 255, 126);
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+.userTableControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deleteTr {
+  opacity: 0.5;
+  border-bottom: hidden;
+  border-top: hidden;
+  border-left: hidden;
+}
+th {
+  padding: 5px;
+}
+td {
+  padding: 5px;
+}
+.sortBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusLock-icon {
+  color: red;
+}
+.statusUnlock-icon {
+  color: rgb(6, 255, 6);
+}
+.statusLock-icon:hover {
+  color: rgb(255, 128, 128);
+  cursor: pointer;
+  font-weight: bold;
+}
+.statusUnlock-icon:hover {
+  color: rgb(117, 250, 117);
+  cursor: pointer;
+  font-weight: bold;
+}
+.dropUpDonw:hover {
+  color: rgb(6, 18, 246);
+  cursor: pointer;
+}
+.deleteTr:hover {
+  cursor: pointer;
+  color: red;
+  opacity: 1;
+}

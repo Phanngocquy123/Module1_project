@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.adminControl {
+  background-color: rgb(251, 245, 236);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.adminControl-btn {
+  border: groove;
+  border-radius: 5px;
+  padding: 2px;
+}
+.adminControl-btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 0);
+}
+.product-p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(203, 255, 126);
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+/* product */
+#productControl {
+  display: flex;
+  margin: 20px 8%;
+}
+#productControl__add {
+  flex: 4;
+  border: ridge;
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 50%;
+}
+#productControl__show {
+  flex: 6;
+}
+/* productControl__add */
+.productControl__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+.productControl__btnAddCancel {
+  display: flex;
+  gap: 7px;
+}
+.contentP {
+  font-weight: bold;
+  font-size: 17px;
+}
+.addBtn {
+  padding: 2px 5px;
+  background-color: rgb(255, 252, 65);
+  color: blue;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+}
+.cancelBtn {
+  padding: 2px 5px;
+  background-color: rgb(120, 120, 120);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  display: none;
+}
+.labelName {
+  display: inline-block;
+  min-width: 120px;
+  margin: 5px;
+}
+#spaceImg {
+  text-align: center;
+}
+#spaceImg-img {
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#addImgProduct {
+  display: none;
+}
+.addImgBtn {
+  background-color: #dbdbdb;
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+.addBtn:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.cancelBtn:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.addImgBtn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* productControl__show */
+table {
+  border-collapse: collapse;
+}
+th {
+  padding: 5px;
+}
+td {
+  padding: 3px;
+  text-align: center;
+}
+
+#imgBolt {
+  height: 100px;
+}
+.status {
+  display: flex;
+  justify-content: center;
+}
+.onOffStatus {
+  text-align: center;
+}
+.onStatus-cover {
+  background-color: rgb(9, 255, 0);
+  position: relative;
+  height: 20px;
+  width: 40px;
+  border-radius: 15px;
+  margin-top: 2px;
+}
+.offStatus-cover {
+  background-color: rgb(255, 0, 0);
+  position: relative;
+  height: 20px;
+  width: 40px;
+  border-radius: 15px;
+  margin-top: 2px;
+}
+.onStatus-circl {
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  top: 1.5px;
+  right: 4px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+}
+.offStatus-circl {
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  top: 1.5px;
+  left: 4px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+}
+.onStatus-cover:hover {
+  background-color: rgb(157, 255, 154);
+  cursor: pointer;
+}
+.offStatus-cover:hover {
+  background-color: rgb(255, 147, 147);
+  cursor: pointer;
+}
+.bgrActived {
+  opacity: 0.2;
+}
+.editDelete {
+  border: groove;
+  border-radius: 5px;
+}
+.editDelete:hover {
+  cursor: pointer;
+  background-color: rgb(252, 219, 213);
+}

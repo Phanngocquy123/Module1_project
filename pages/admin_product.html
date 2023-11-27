@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/admin_product.css" />
+  </head>
+  <body>
+    <div class="adminControl">
+      <span class="adminControl-btn" onclick="home()">Trang chủ</span>
+      <span class="adminControl-btn" onclick="orderC()">Quản lý đơn hàng</span>
+      <span class="adminControl-btn" onclick="userC()">Quản lý người dùng</span>
+    </div>
+    <p class="product-p">Quản lý sản phẩm</p>
+    <div id="productControl">
+      <div id="productControl__add">
+        <div class="productControl__btn">
+          <p class="contentP">Thêm sản phẩm:</p>
+          <div class="productControl__btnAddCancel">
+            <button class="addBtn" onclick="addProduct()">Thêm</button>
+            <button class="cancelBtn" onclick="cancelEdit()">Hủy</button>
+          </div>
+        </div>
+        <label class="labelName">Tên sản phẩm:</label>
+        <input id="addNameProduct" type="text" /> <br />
+        <label class="labelName">Giá:</label>
+        <input id="addPriceProduct" type="text" /> <br />
+        <label class="labelName">Hình ảnh:</label>
+        <label for="addImgProduct" class="addImgBtn">Chọn ảnh</label>
+        <input id="addImgProduct" type="file" onchange="changeImage(this)" />
+        <br />
+        <div id="spaceImg"></div>
+      </div>
+      <div id="productControl__show">
+        <table border="1px">
+          <thead>
+            <tr>
+              <th>Stt</th>
+              <th>Tên sản phẩm</th>
+              <th>ID</th>
+              <th>Hình ảnh</th>
+              <th>Giá</th>
+              <th>Trạng thái</th>
+              <th>Sửa</th>
+              <th>Xóa</th>
+            </tr>
+          </thead>
+          <tbody id="productsCtl"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="../js/admin_product.js"></script>
+</html>

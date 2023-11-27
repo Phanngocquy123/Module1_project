@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.adminControl {
+  background-color: rgb(251, 245, 236);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.adminControl-btn {
+  border: groove;
+  border-radius: 5px;
+  padding: 2px;
+}
+.adminControl-btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 0);
+}
+.orderControl-p {
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(203, 255, 126);
+  color: red;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* order */
+.order {
+  display: flex;
+  justify-content: center;
+}
+#orderList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px;
+}
+.orderList-p {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  padding: 7px;
+}
+table {
+  text-align: center;
+}
+th {
+  padding: 2px;
+}
+td {
+  padding: 2px;
+}
+.btnConfirm {
+  border-radius: 3px;
+  border: outset;
+  padding: 1px;
+}
+.btnCancel {
+  border-radius: 3px;
+  border: outset;
+  padding: 1px;
+}
+.colorActived {
+  background-color: rgb(251, 239, 221);
+}
+.proDetail {
+  color: blue;
+}
+.deleteBtn:hover {
+  cursor: pointer;
+  color: red;
+}
+.proDetail:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ,, */
+#orderDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  display: none;
+  width: 28%;
+}
+.orderDetail-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  width: 100%;
+}
+.orderDetail-closeP {
+  font-size: 17px;
+  font-weight: bold;
+}
+.orderDetail-closeSpan {
+  color: rgb(136, 136, 136);
+}
+.imgDetail {
+  max-width: 80px;
+}
+.orderDetail-closeSpan:hover {
+  color: black;
+  cursor: pointer;
+}
